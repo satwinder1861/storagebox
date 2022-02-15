@@ -13,7 +13,7 @@ ReactDOM.render(
   <Provider store={store}>
   <React.StrictMode>
   <Routes>
-        <Route path="/" element={<Homepage/>}/>
+        <Route path="/storagebox" element={<Homepage/>}/>
         <Route path="/Login" element={<Loginpage/>}/>
         <Route path="/Profile" element={<Profilepage/>}/>
   </Routes>

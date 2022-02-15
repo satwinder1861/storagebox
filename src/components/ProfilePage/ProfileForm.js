@@ -88,7 +88,7 @@ const ProfileForm = () =>{
     const formData = new FormData();
     formData.append('images',file);
     try{
-const res = await axios.post('http://localhost:8080/single',formData,{
+const res = await axios.post(' https://frozen-dusk-93485.herokuapp.com/single',formData,{
   headers:{
     'Content-Type':'multipart/form-data'
   },

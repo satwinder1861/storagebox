@@ -107,7 +107,7 @@ useEffect(() =>{
         //     'Access-Control-Allow-Origin':'*'
         //   }
           
-        axios.post('http://localhost:8080/register', {
+        axios.post(' https://frozen-dusk-93485.herokuapp.com/register', {
             signupValues
           })
           .then(function (response) {

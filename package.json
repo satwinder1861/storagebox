@@ -1,8 +1,8 @@
 {
-  "homepage": "https://satwinder1861.github.io/storagebox",
   "name": "sunny-box",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://satwinder1861.github.io/storagebox",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",

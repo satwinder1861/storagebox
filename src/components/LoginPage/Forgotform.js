@@ -96,7 +96,7 @@ const ForgotForm = () => {
             //     'Access-Control-Allow-Origin':'*'
             //   }
               
-            axios.post('http://localhost:8080/forgot', {
+            axios.post(' https://frozen-dusk-93485.herokuapp.com/forgot', {
                 forgotValues
               })
               .then(function (response) {

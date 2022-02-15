@@ -21,7 +21,7 @@ margin:15px;
     const ProfileSection = () =>{
         const [uploadedFile, setUploadedFile] = useState([]);
         useEffect(() => {
-            axios.get('http://localhost:8080/content').then(res=> {
+            axios.get(' https://frozen-dusk-93485.herokuapp.com/content').then(res=> {
               setUploadedFile(res.data.imageUrl);
               console.log(res.data.imageUrl);
               
@@ -29,7 +29,7 @@ margin:15px;
             
         },[]);
 
-        const myList= uploadedFile.map((item) => <Img src={`http://localhost:8080/uploads/${item.name}`} width="200" />);
+        const myList= uploadedFile.map((item) => <Img src={` https://frozen-dusk-93485.herokuapp.com/uploads/${item.name}`} width="200" />);
 
         return(
         <SectionMain>
