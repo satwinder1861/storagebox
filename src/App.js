@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+// import { increment,decrement } from './components/action';
+// import {useSelector,useDispatch} from 'react-redux';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import MainSection from './components/MainSection';
+import ProfileSection from './components/ProfileSection';
+import SubSection from './components/Subsection';
+import LoginForm from './components/LoginPage/LoginForm';
+import ProfileForm from './components/ProfilePage/ProfileForm';
+const AppMain = styled.div`
+display:block;
+width:100%;
+height:100%;
+`;
 
-function App() {
+const Section = styled.section`
+display:block;
+font-size: 16px;
+height: 100%; 
+`;
+function Homepage() {
+  // const counter =useSelector(state => state.counterReducer);
+  // const dispatch = useDispatch();
+  // const stuff= () => dispatch(increment())
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppMain>
+    <Navbar/>
+    <MainSection/>
+    <SubSection/>
+    <Footer/>
+    </AppMain>
+  )
+}
+function Profilepage() {
+  // const counter =useSelector(state => state.counterReducer);
+  // const dispatch = useDispatch();
+  // const stuff= () => dispatch(increment())
+  return (
+    <AppMain>
+      <Navbar/>
+          <ProfileForm/>
+        <Section>
+        <ProfileSection/>
+        </Section>
+    </AppMain>
+  )
+}
+    function Loginpage() {
+      // const counter =useSelector(state => state.counterReducer);
+      // const dispatch = useDispatch();
+      // const stuff= () => dispatch(increment())
+      return (
+        <AppMain>
+          <Navbar/>
+            <Section>
+            <LoginForm/>
+            </Section>
+        </AppMain>
+  
+  
+
+  )
 }
 
-export default App;
+export {Homepage,Loginpage,Profilepage};
